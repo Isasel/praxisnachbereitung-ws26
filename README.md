@@ -127,3 +127,20 @@ docker compose -f .\minimal-starter-db-light-plus-mqtt\minimal-starter-db-light-
 ```
 
 Mit `Strg+C` die Log-Anzeige beenden. Die Container laufen dabei weiter.
+
+### 7. Alles stoppen und später wieder starten
+
+Alle Dienste stoppen (aus dem Repository-Hauptordner):
+
+```powershell
+docker compose -f .\minimal-starter-db-light-plus-mqtt\minimal-starter-db-light-plus-mqtt\docker-compose.yml stop
+```
+
+Danach kannst du das Terminal und Docker Desktop schließen. Die Container
+und ihre Daten bleiben erhalten.
+
+Später Docker Desktop öffnen und alle Dienste wieder starten:
+
+```powershell
+docker compose -f .\minimal-starter-db-light-plus-mqtt\minimal-starter-db-light-plus-mqtt\docker-compose.yml up -d
+```
